@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+</head>
+<body>
+{% block content %}
+    <center>
+    <form class='' method='get'>
+      Latitude:<input class="form-control" name="latitude" ><br><br>
+      Longitude:<input class="form-control" name="longitude" ><br><br>
+        <button type="submit">Submit</button><br><br>
+    </form>
+
+    <div>Air Pressure At Sea Level:{{data.air_pressure_at_sea_level}}</div>
+    <div>Air Temperature: {{data.air_temperature}}</div>
+    <div>Wind Speed: {{data.wind_speed}}</div>
+    </center>
+
+{% endblock %}
+</body>
+</html>
